@@ -1,0 +1,242 @@
+/* =========================
+   PREDICTION SCREEN
+========================= */
+
+#prediction-screen{
+
+    width:100%;
+    height:100%;
+
+}
+
+
+.prediction-container{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+
+
+/* =========================
+   VS + EQUIPOS
+========================= */
+
+
+.teams-banner{
+
+    position:absolute;
+
+    top: 18%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:30;
+
+}
+
+
+
+.vs-banner{
+
+    width:260px !important;
+
+    height:auto;
+
+    z-index:40;
+
+}
+
+
+
+/* =========================
+   NOMBRES
+========================= */
+
+.team-left,
+.team-right{
+
+    position:absolute;
+
+    top:21%;
+
+    width:120px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:11px;
+
+    font-weight:900;
+
+    text-shadow:
+    2px 2px 4px #000;
+
+    z-index:100;
+
+}
+
+
+.team-left{
+
+    left:45%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+
+.team-right{
+
+    left:55%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+
+
+#team-left-name,
+#team-right-name{
+
+    white-space:nowrap;
+
+}
+
+
+
+/* =========================
+   BANDERAS
+========================= */
+
+
+.arena-flag{
+
+
+    position:absolute;
+
+
+    width:70px;
+
+
+    height:auto;
+
+
+    z-index:20;
+
+
+}
+
+
+
+#flag-left{
+
+
+    left:39%;
+
+
+    top:52%;
+
+
+    transform:translate(-50%,-50%);
+
+
+}
+
+
+
+#flag-right{
+
+
+    left:61%;
+
+
+    top:52%;
+
+
+    transform:translate(-50%,-50%);
+
+
+}
+
+/* =========================
+   CABRA
+========================= */
+
+.goat-arena{
+
+    position:absolute;
+
+    top:65%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90px;
+
+    z-index:25;
+
+    transition:
+        left 1.5s ease,
+        transform .4s ease;
+
+}
+
+
+
+/* =========================
+   ORIENTACION
+========================= */
+
+
+.look-left{
+
+
+    transform:
+
+    translateX(-50%)
+
+    scaleX(-1);
+
+
+}
+
+
+
+.look-right{
+
+
+    transform:
+
+    translateX(-50%)
+
+    scaleX(1);
+
+
+}
+
+#prediction-screen .goat-arena{
+
+    width:90px !important;
+
+}
+
+
+
+

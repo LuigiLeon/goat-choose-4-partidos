@@ -1,0 +1,18 @@
+[
+  {
+    "team1": "México",
+    "team2": "Sudáfrica",
+    "flag1": "assets/flags/mexico.png",
+    "flag2": "assets/flags/sudafrica.png",
+    "prob1": 65,
+    "prob2": 35
+  },
+  {
+    "team1": "Corea",
+    "team2": "Rep. Checa",
+    "flag1": "assets/flags/korea.png",
+    "flag2": "assets/flags/rep-cheka.png",
+    "prob1": 45,
+    "prob2": 55
+  }
+]

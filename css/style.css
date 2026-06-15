@@ -1,0 +1,214 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root{
+
+    --yellow:#F5C332;
+
+    --orange:#F7941D;
+
+    --green:#0B8B4B;
+
+    --white:#FFFFFF;
+
+    --black:#000000;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    position:relative;
+
+    width:100vw;
+
+    height:100vh;
+
+    background:#000;
+}
+
+/* =========================
+   PANTALLAS
+========================= */
+
+.screen{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    display:none;
+
+    overflow:hidden;
+}
+
+.screen.active{
+
+    display:block;
+}
+
+/* =========================
+   FONDOS
+========================= */
+
+/* =========================
+   FONDOS
+========================= */
+
+.background{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:100%;
+    height:100%;
+
+    transform:translate(-50%,-50%);
+
+    object-fit:contain;
+
+    z-index:0;
+
+}
+
+/* =========================
+   CONTENEDORES
+========================= */
+
+.home-container,
+.prediction-container,
+.result-container{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+    height:100%;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:0.2s ease;
+}
+
+button:hover{
+
+    transform:scale(1.03);
+}
+
+button:active{
+
+    transform:scale(0.98);
+}
+
+/* =========================
+   IMAGENES
+========================= */
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+}
+
+/* =========================
+   GOAT ARENA
+========================= */
+
+.goat-arena{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    transition:
+        left 1.5s ease,
+        transform .4s ease;
+}
+
+/* =========================
+   ORIENTACION CABRA
+========================= */
+
+.look-left{
+
+    transform:
+    translateX(-50%)
+    scaleX(-1);
+}
+
+.look-right{
+
+    transform:
+    translateX(-50%)
+    scaleX(1);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+    .goat-arena{
+
+        width:90px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .goat-arena{
+
+        width:90px;
+    }
+
+}

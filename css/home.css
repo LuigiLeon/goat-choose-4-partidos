@@ -1,0 +1,192 @@
+/* =========================
+   TITULO PARTIDOS
+========================= */
+
+.partidos-title {
+    position: absolute;
+    top: 63%; /* Ligeramente más arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 190x;
+    text-align: center;
+    background: #F5C332;
+    color: #0B8B4B;
+    font-weight: 900;
+    font-size: 17px;
+    padding: 8px;
+    border-radius: 12px;
+    z-index: 1; /* <-- DETRÁS de las tarjetas */
+}
+
+/* =========================
+   CONTENEDOR PARTIDOS
+========================= */
+
+#matches-container {
+    position: absolute;
+    top: 68%; /* <-- Subido para que solape al amarillo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    z-index: 10; /* <-- ENCIMA del amarillo */
+}
+
+
+/* =========================
+   BADGE FECHA
+========================= */
+
+.date-badge {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #F7941D;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.date-badge .day {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.date-badge .month {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* =========================
+   FILA EQUIPOS
+========================= */
+
+.match-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+/* =========================
+   BANDERAS
+========================= */
+
+.flag-small {
+    width: 26px;
+    height: auto;
+}
+
+/* =========================
+   NOMBRE PARTIDO
+========================= */
+
+.match-name {
+    font-size: 14px;
+    font-weight: 800;
+    color: #222;
+    text-align: center;
+}
+
+/* =========================
+   BOTON PREDECIR
+========================= */
+
+.predict-btn {
+    width: 140px;
+    display: block;
+    margin: 0 auto;
+    background: #F7941D;
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+    padding: 6px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* =========================
+   IMAGENES HOME
+========================= */
+.logo {
+
+    position:absolute;
+
+    top:12%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:360px;
+
+    z-index:10;
+
+}
+
+.trofeo{
+
+    position:absolute;
+
+    top:32%;
+
+    left:41%;
+
+    width:7vw;
+
+    max-width:100px;
+
+    z-index:10;
+}
+
+.goat-home{
+
+    position:absolute;
+
+    top:30%;
+
+    left:49%;
+
+    width:16vw;
+
+    max-width:220px;
+
+    z-index:10;
+}
+
+.match-card {
+
+    width:82%;
+
+    background:rgb(240,239,236);
+
+    border-radius:18px;
+
+    padding:7px 20px 7px 70px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+
+    box-sizing:border-box;
+
+    margin-bottom:10px;
+
+    position:relative;
+
+}

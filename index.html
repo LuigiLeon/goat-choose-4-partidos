@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOAT CHOOSE - Mundial 2026</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/prediction.css">
+    <link rel="stylesheet" href="css/result.css">
+</head>
+
+<body>
+
+    <!-- ===================== -->
+    <!-- HOME -->
+    <!-- ===================== -->
+
+    <section id="home-screen" class="screen active">
+
+        <img
+            src="assets/backgrounds/home-bg.png"
+            class="background"
+            alt="Home Background">
+
+        <div class="home-container">
+
+            <img
+                src="assets/ui/logo.png"
+                class="logo"
+                alt="Logo">
+
+            <img
+                src="assets/ui/trofeo.png"
+                class="trofeo"
+                alt="Trofeo">
+
+            <img
+                src="assets/goat/goat-neutral.png"
+                class="goat-home"
+                alt="Cabra">
+
+            <div class="partidos-title">
+                ⚽ PARTIDOS
+            </div>
+
+            <div id="matches-container">
+
+                <!-- Partido 1 -->
+
+                <div class="match-card">
+
+                    <div class="date-badge">
+                        <span class="day">11</span>
+                        <span class="month">JUN</span>
+                    </div>
+
+                    <div class="match-row">
+
+                        <img
+                            src="assets/flags/mexico.png"
+                            class="flag-small"
+                            alt="México">
+
+                        <span class="match-name">
+                            MÉXICO VS SUDAFRICA
+                        </span>
+
+                        <img
+                            src="assets/flags/sudafrica.png"
+                            class="flag-small"
+                            alt="Sudáfrica">
+
+                    </div>
+
+                    <button
+                        class="predict-btn"
+                        onclick="startPrediction(
+                        'México',
+                        'Sudáfrica',
+                        'assets/flags/mexico.png',
+                        'assets/flags/sudafrica.png',
+                        65
+                    )">
+
+                        PREDECIR
+
+                    </button>
+
+                </div>
+
+                <!-- Partido 2 -->
+
+                <div class="match-card">
+
+                    <div class="date-badge">
+                        <span class="day">11</span>
+                        <span class="month">JUN</span>
+                    </div>
+
+                    <div class="match-row">
+
+                        <img
+                            src="assets/flags/korea.png"
+                            class="flag-small"
+                            alt="Corea">
+
+                        <span class="match-name">
+                            KOREA VS REP. CHECA
+                        </span>
+
+                        <img
+                            src="assets/flags/rep-cheka.png"
+                            class="flag-small"
+                            alt="República Checa">
+
+                    </div>
+
+                    <button
+                        class="predict-btn"
+                        onclick="startPrediction(
+                        'Corea',
+                        'Rep. Checa',
+                        'assets/flags/korea.png',
+                        'assets/flags/rep-cheka.png',
+                        45
+                    )">
+
+                        PREDECIR
+
+                    </button>
+
+                </div>
+
+            </div>
+
+                </div>
+
+    </section>
+
+    <!-- PREDICTION -->
+
+
+    <!-- PREDICTION -->
+    <!-- ===================== -->
+
+   <!-- ===================== -->
+<!-- PREDICTION -->
+<!-- ===================== -->
+
+<section id="prediction-screen" class="screen">
+
+    <img
+        src="assets/backgrounds/arena-bg.png"
+        class="background"
+        alt="Arena">
+
+    <div class="prediction-container">
+
+    <div class="teams-banner">
+
+
+    <img
+        src="assets/ui/vs.png"
+        class="vs-banner"
+        alt="VS">
+
+
+</div>
+
+
+<div class="team-left">
+
+    <span id="team-left-name">
+        MÉXICO
+    </span>
+
+</div>
+
+
+<div class="team-right">
+
+    <span id="team-right-name">
+        SUDAFRICA
+    </span>
+
+</div>
+
+    <!-- BANDERAS -->
+
+    <img
+        id="flag-left"
+        class="arena-flag"
+        alt="Flag Left">
+
+    <img
+        id="flag-right"
+        class="arena-flag"
+        alt="Flag Right">
+
+    <!-- CABRA -->
+
+    <img
+        id="goatArena"
+        src="assets/goat/goat-neutral.png"
+        class="goat-arena"
+        alt="Cabra Arena">
+
+</div>
+
+</section>
+
+    <!-- ===================== -->
+    <!-- RESULT -->
+    <!-- ===================== -->
+
+    <section id="result-screen" class="screen">
+
+        <img
+            src="assets/backgrounds/arena-bg.png"
+            class="background"
+            alt="Arena">
+
+        <div class="result-container">
+
+            <img
+                src="assets/effects/brillo.png"
+                class="winner-bright"
+                alt="Brillo">
+
+            <img
+                src="assets/effects/corona.png"
+                class="winner-crown"
+                alt="Corona">
+
+            <img
+                id="winner-flag"
+                class="winner-flag"
+                alt="Ganador">
+
+            <img
+                src="assets/goat/celebrando.png"
+                class="winner-goat"
+                alt="Celebrando">
+
+            <img
+                src="assets/effects/estrellas.png"
+                class="winner-stars"
+                alt="Estrellas">
+
+            <div
+                id="winner-text"
+                class="winner-text">
+
+                GANA MÉXICO !!
+
+            </div>
+
+            <button
+                id="continue-btn"
+                onclick="goHome()">
+
+                CONTINUAR
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/animation.js"></script>
+    <script src="js/prediction.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+
+</html>
