@@ -14,5 +14,21 @@
     "flag2": "assets/flags/rep-cheka.png",
     "prob1": 45,
     "prob2": 55
+  },
+  {
+    "team1": "Brasil",
+    "team2": "Argentina",
+    "flag1": "assets/flags/brasil.png",
+    "flag2": "assets/flags/argentina.png",
+    "prob1": 50,
+    "prob2": 50
+  },
+  {
+    "team1": "España",
+    "team2": "Francia",
+    "flag1": "assets/flags/espana.png",
+    "flag2": "assets/flags/francia.png",
+    "prob1": 55,
+    "prob2": 45
   }
 ]

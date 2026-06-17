@@ -49,168 +49,133 @@
             <div id="matches-container">
 
                 <!-- Partido 1 -->
-
                 <div class="match-card">
-
                     <div class="date-badge">
                         <span class="day">11</span>
                         <span class="month">JUN</span>
                     </div>
-
                     <div class="match-row">
-
-                        <img
-                            src="assets/flags/mexico.png"
-                            class="flag-small"
-                            alt="México">
-
-                        <span class="match-name">
-                            MÉXICO VS SUDAFRICA
-                        </span>
-
-                        <img
-                            src="assets/flags/sudafrica.png"
-                            class="flag-small"
-                            alt="Sudáfrica">
-
+                        <img src="assets/flags/mexico.png" class="flag-small" alt="México">
+                        <span class="match-name">MÉXICO VS SUDAFRICA</span>
+                        <img src="assets/flags/sudafrica.png" class="flag-small" alt="Sudáfrica">
                     </div>
-
-                    <button
-                        class="predict-btn"
-                        onclick="startPrediction(
+                    <button class="predict-btn" onclick="startPrediction(
                         'México',
                         'Sudáfrica',
                         'assets/flags/mexico.png',
                         'assets/flags/sudafrica.png',
                         65
-                    )">
-
-                        PREDECIR
-
-                    </button>
-
+                    )">PREDECIR</button>
                 </div>
 
                 <!-- Partido 2 -->
-
                 <div class="match-card">
-
                     <div class="date-badge">
                         <span class="day">11</span>
                         <span class="month">JUN</span>
                     </div>
-
                     <div class="match-row">
-
-                        <img
-                            src="assets/flags/korea.png"
-                            class="flag-small"
-                            alt="Corea">
-
-                        <span class="match-name">
-                            KOREA VS REP. CHECA
-                        </span>
-
-                        <img
-                            src="assets/flags/rep-cheka.png"
-                            class="flag-small"
-                            alt="República Checa">
-
+                        <img src="assets/flags/korea.png" class="flag-small" alt="Corea">
+                        <span class="match-name">KOREA VS REP. CHECA</span>
+                        <img src="assets/flags/rep-cheka.png" class="flag-small" alt="República Checa">
                     </div>
-
-                    <button
-                        class="predict-btn"
-                        onclick="startPrediction(
+                    <button class="predict-btn" onclick="startPrediction(
                         'Corea',
                         'Rep. Checa',
                         'assets/flags/korea.png',
                         'assets/flags/rep-cheka.png',
                         45
-                    )">
+                    )">PREDECIR</button>
+                </div>
 
-                        PREDECIR
+                <!-- Partido 3 -->
+                <div class="match-card">
+                    <div class="date-badge">
+                        <span class="day">11</span>
+                        <span class="month">JUN</span>
+                    </div>
+                    <div class="match-row">
+                        <img src="assets/flags/brasil.png" class="flag-small" alt="Brasil">
+                        <span class="match-name">BRASIL VS ARGENTINA</span>
+                        <img src="assets/flags/argentina.png" class="flag-small" alt="Argentina">
+                    </div>
+                    <button class="predict-btn" onclick="startPrediction(
+                        'Brasil',
+                        'Argentina',
+                        'assets/flags/brasil.png',
+                        'assets/flags/argentina.png',
+                        50
+                    )">PREDECIR</button>
+                </div>
 
-                    </button>
-
+                <!-- Partido 4 -->
+                <div class="match-card">
+                    <div class="date-badge">
+                        <span class="day">11</span>
+                        <span class="month">JUN</span>
+                    </div>
+                    <div class="match-row">
+                        <img src="assets/flags/espana.png" class="flag-small" alt="España">
+                        <span class="match-name">ESPAÑA VS FRANCIA</span>
+                        <img src="assets/flags/francia.png" class="flag-small" alt="Francia">
+                    </div>
+                    <button class="predict-btn" onclick="startPrediction(
+                        'España',
+                        'Francia',
+                        'assets/flags/espana.png',
+                        'assets/flags/francia.png',
+                        55
+                    )">PREDECIR</button>
                 </div>
 
             </div>
 
-                </div>
+        </div>
 
     </section>
 
-    <!-- PREDICTION -->
-
-
+    <!-- ===================== -->
     <!-- PREDICTION -->
     <!-- ===================== -->
 
-   <!-- ===================== -->
-<!-- PREDICTION -->
-<!-- ===================== -->
+    <section id="prediction-screen" class="screen">
 
-<section id="prediction-screen" class="screen">
+        <img
+            src="assets/backgrounds/arena-bg.png"
+            class="background"
+            alt="Arena">
 
-    <img
-        src="assets/backgrounds/arena-bg.png"
-        class="background"
-        alt="Arena">
+        <div class="prediction-container">
 
-    <div class="prediction-container">
+            <div class="teams-banner">
+                <img
+                    src="assets/ui/vs.png"
+                    class="vs-banner"
+                    alt="VS">
+            </div>
 
-    <div class="teams-banner">
+            <div class="team-left">
+                <span id="team-left-name">MÉXICO</span>
+            </div>
 
+            <div class="team-right">
+                <span id="team-right-name">SUDAFRICA</span>
+            </div>
 
-    <img
-        src="assets/ui/vs.png"
-        class="vs-banner"
-        alt="VS">
+            <!-- BANDERAS -->
+            <img id="flag-left" class="arena-flag" alt="Flag Left">
+            <img id="flag-right" class="arena-flag" alt="Flag Right">
 
+            <!-- CABRA -->
+            <img
+                id="goatArena"
+                src="assets/goat/goat-neutral.png"
+                class="goat-arena"
+                alt="Cabra Arena">
 
-</div>
+        </div>
 
-
-<div class="team-left">
-
-    <span id="team-left-name">
-        MÉXICO
-    </span>
-
-</div>
-
-
-<div class="team-right">
-
-    <span id="team-right-name">
-        SUDAFRICA
-    </span>
-
-</div>
-
-    <!-- BANDERAS -->
-
-    <img
-        id="flag-left"
-        class="arena-flag"
-        alt="Flag Left">
-
-    <img
-        id="flag-right"
-        class="arena-flag"
-        alt="Flag Right">
-
-    <!-- CABRA -->
-
-    <img
-        id="goatArena"
-        src="assets/goat/goat-neutral.png"
-        class="goat-arena"
-        alt="Cabra Arena">
-
-</div>
-
-</section>
+    </section>
 
     <!-- ===================== -->
     <!-- RESULT -->
@@ -277,6 +242,5 @@
     <script src="js/app.js"></script>
 
 </body>
-
 
 </html>
