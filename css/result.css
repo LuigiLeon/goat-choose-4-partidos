@@ -116,17 +116,17 @@
 
     background-position:center;
 
-    min-width:260px;
+    min-width:220px;
 
-    height:60px;
+    height:50px;
 
-    line-height:60px;
+    line-height:50px;
 
     text-align:center;
 
     color:#FFD700;
 
-    font-size:22px;
+    font-size:18px;
 
     font-weight:900;
 
@@ -155,9 +155,9 @@
 
     border-radius:14px;
 
-    padding:12px 28px;
+    padding:8px 20px;
 
-    font-size:18px;
+    font-size:12px;
 
     font-weight:900;
 

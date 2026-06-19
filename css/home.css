@@ -4,10 +4,10 @@
 
 .partidos-title {
     position: absolute;
-    top: 63%;
+    top: 58%;
     left: 50%;
     transform: translateX(-50%);
-    width: 190px;
+    width: 150px;
     text-align: center;
     background: #F5C332;
     color: #0B8B4B;
@@ -24,11 +24,10 @@
 
 #matches-container {
     position: absolute;
-    top: 72%;
-    left: 49%; /* CAMBIO: de 50% a 48% para mover a la izquierda */
-    transform: translateX(-45%); /* CAMBIO: de -50% a -45% */
-    width: 80%;
-    max-width: 360px;
+    top: 66%;
+    left: 47.5%; /* CAMBIO: de 50% a 48% para mover a la izquierda */
+    transform: translateX(-50%); /* CAMBIO: de -50% a -45% */
+    width: min(86vw, 360px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
@@ -49,7 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* CAMBIO: de space-between a flex-start */
-    min-height: 55px; /* CAMBIO: reducido de 70px a 65px */
+    min-height: 45px; /* CAMBIO: reducido de 70px a 65px */
 }
 
 /* =========================
@@ -59,7 +58,7 @@
 .date-badge {
     position: absolute;
     left: 6px;
-    top: 35%;
+    top: 40%;
     transform: translateY(-50%);
     background: #F7941D;
     color: white;
@@ -139,7 +138,7 @@
 .predict-btn {
     width: 60%;
     display: block;
-    margin: 0 auto;
+    margin: 0 15% 0 auto;
     background: #F7941D;
     color: white;
     font-size: 7px;
@@ -165,24 +164,22 @@
     top: 12%;
     left: 50%;
     transform: translateX(-50%);
-    width: 360px;
+    width: min(320px, 82vw);
     z-index: 10;
 }
 
 .trofeo {
     position: absolute;
-    top: 32%;
-    left: 41%;
-    width: 7vw;
-    max-width: 100px;
+    top: 30%;
+    left: 30%;
+    width: clamp(75px, 15vw, 115px);
     z-index: 10;
 }
 
 .goat-home {
     position: absolute;
     top: 30%;
-    left: 49%;
-    width: 16vw;
-    max-width: 220px;
+    left: 45%;
+    width: clamp(145px, 28vw, 280px);
     z-index: 10;
 }

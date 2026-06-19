@@ -72,7 +72,7 @@
 
     position:absolute;
 
-    top:21%;
+    top:21.5%;
 
     width:120px;
 
@@ -94,7 +94,7 @@
 
 .team-left{
 
-    left:45%;
+    left:29%;
 
     transform:translate(-50%,-50%);
 
@@ -103,7 +103,7 @@
 
 .team-right{
 
-    left:55%;
+    left:71%;
 
     transform:translate(-50%,-50%);
 
@@ -131,7 +131,7 @@
     position:absolute;
 
 
-    width:70px;
+    width:60px;
 
 
     height:auto;
@@ -147,7 +147,7 @@
 #flag-left{
 
 
-    left:39%;
+    left:17%;
 
 
     top:52%;
@@ -163,7 +163,7 @@
 #flag-right{
 
 
-    left:61%;
+    left:83%;
 
 
     top:52%;
